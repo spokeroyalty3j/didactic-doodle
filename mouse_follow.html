@@ -1,0 +1,9 @@
+<div id="follower" style="position:absolute; font-size:2em;">🐭</div>
+
+<script>
+document.addEventListener('mousemove', e => {
+  const f = document.getElementById('follower');
+  f.style.left = (e.pageX + 10) + 'px';
+  f.style.top = (e.pageY + 10) + 'px';
+});
+</script>
