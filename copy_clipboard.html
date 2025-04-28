@@ -1,0 +1,11 @@
+<input id="text" value="Copy me!" />
+<button onclick="copyText()">📋 Copy</button>
+
+<script>
+function copyText() {
+    const text = document.getElementById("text");
+    text.select();
+    document.execCommand("copy");
+    alert("Copied!");
+}
+</script>
